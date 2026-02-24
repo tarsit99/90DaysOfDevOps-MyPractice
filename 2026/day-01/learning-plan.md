@@ -10,7 +10,7 @@ Together, Devops & cloud help organizations to achieve HA, reliability, faster r
 Through this course, I aim to build my fundamentals, gain hands-on production-levl project experience that will open better career opportunities and growth.
 
 # Where I want to reach
-- I want to become a confident DevOps engineer who can independently:
+I want to become a confident DevOps engineer who can independently:
  - Design and manage CI/CD pipelines
  - Deploy and manage applications on Kubernetes
  - Troubleshoot production issues effectively
