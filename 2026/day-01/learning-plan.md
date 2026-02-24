@@ -37,4 +37,4 @@ I want to become a confident DevOps engineer who can independently:
 # Weekly time allocation
 - Weekdays: ~2 hours daily
 - Weekends: 4 - 5 hours daily
-- Busy days: Minimum 30 minutes of learning or revision
+- Busy days: Minimum 30 minutes of learning or revision.
