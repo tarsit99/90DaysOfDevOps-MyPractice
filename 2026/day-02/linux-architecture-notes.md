@@ -11,7 +11,7 @@
 
 3. Init / systemd
     * First process started (PID 1)
-    * Starts and manages all system services and handles process like systemctl, journalctl.
+    * Starts and manages all system services and handles process like systemctl, journalctl
     * Controls system state after boot
 
 # How Processes Are Created and Managed
@@ -25,12 +25,12 @@ PID (unique ID), Parent process, CPU & memory usage
 # Process States
 1. Running (R) → Using CPU
 2. Sleeping (S) → Waiting for input/resource
-3. Stopped (T) → Paused manually (e.g., via signal).
+3. Stopped (T) → Paused manually (e.g., via signal)
 4. Zombie (Z) → Process finished but not cleaned by parent
 5. Idle (I) → No active work
 
 # What systemd Does and Why It Matters
-- systemd is the first process that runs when computer turn on.
+- systemd is the first process that runs when computer turn-on
 - Manages services (start/stop/restart)
 - Manages backgroung services (daemons)
 - Automatically restarts failed services
@@ -39,7 +39,7 @@ PID (unique ID), Parent process, CPU & memory usage
 - Uses units for service control
 
 It matters because:
-- It provides consistent, simple interface to start, stop, enable, and monitor services (using systemd units).
+- It provides consistent, simple interface to start, stop, enable, and monitor services (using systemd units)
 - Centralized logging
 - Managing services easily
 
