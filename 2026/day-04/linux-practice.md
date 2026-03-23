@@ -29,7 +29,7 @@
 ![alt text](image-4.png)
 
 
-# 📄 Log Checks
+# 📄 Log checks
 1. ```journalctl -u nginx```: View nginx logs
 
 ![alt text](image-5.png)
