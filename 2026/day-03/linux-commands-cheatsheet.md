@@ -1,4 +1,4 @@
-# ⚙️ Process Management
+# ⚙️ Process management
 - ps -ef → List all running processes
 - top → Dynamic real-time CPU/memory usage
 - htop → Interactive process viewer, similar to top but allows you to scroll vertically and horizontally, and interact using a pointing device (mouse)
@@ -8,7 +8,7 @@
 - nproc → prints the number of processing units (CPU cores) available to the current process
 - uptime → System load & uptime
 
-# 📁 File System Commands
+# 📁 File system commands
 - ls -l → Long Listing files
 - pwd → Show present working directory
 - cd <dir> → Change directory
@@ -20,7 +20,7 @@
 - find → Seacrh for a file in a directory hierarchy
 - wc → Print newline, word and byte counts for each file
 
-# 🌐 Networking Troubleshooting
+# 🌐 Networking troubleshooting
 - ping → Check connectivity
 - ip addr → View IP address
 - dig <domain> → DNS lookup utility
@@ -28,7 +28,7 @@
 - curl → Transfer a URL or tool  for  transferring  data from or to a server using URLs
 - netstat -tulnp → Check open ports
 
-# 📊 System & Logs
+# 📊 System and Logs
 - df -h → Disk usage
 - systemctl start|status|stop <service> → Start a service | Check service health | Stop a service
 - journalctl -u <service> → View service logs
