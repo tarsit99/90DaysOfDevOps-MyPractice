@@ -1,18 +1,18 @@
 # Core Components of Linux
 1. Kernel
-- Heart or core of the OS that talks directly to hardware
-- Handles CPU, memory, processes, and files
-- Acts as a bridge between hardware and applications
+    * Heart or core of the OS that talks directly to hardware
+    * Handles CPU, memory, processes, and files
+    * Acts as a bridge between hardware and applications
 
 2. User space
-- Place where users & applications run (e.g., browser, DB, editors)
-- Uses system calls to request resources from the kernel
-- Keeps programs isolated to avoid system crashes
+    * Place where users & applications run (e.g., browser, DB, editors)
+    * Uses system calls to request resources from the kernel
+    * Keeps programs isolated to avoid system crashes
 
 3. Init / systemd
-- First process started (PID 1)
-- Starts and manages all system services and handles process like systemctl, journalctl.
-- Controls system state after boot
+    * First process started (PID 1)
+    * Starts and manages all system services and handles process like systemctl, journalctl.
+    * Controls system state after boot
 
 # How Processes Are Created and Managed
 - A process = running program
