@@ -2,6 +2,7 @@
 
 Runbook is a short, repeatable checklist which we followed during an incident.
 
+---
 
 ## 🛠️ Target Service
 **nginx**
@@ -23,7 +24,7 @@ Runbook is a short, repeatable checklist which we followed during an incident.
 
 ![alt text](image-2.png)
 
-
+---
 
 ### 📁 Filesystem sanity
 1. ```mkdir /tmp/runbook-demo```
@@ -32,7 +33,7 @@ Observation: Directory and file created successfully. Later permission look corr
 
 ![alt text](image-3.png)
 
-
+---
 
 ### ⚙️ CPU / Memory check
 1. ```htop```: It gives dynamic real-time running process. Similar to top, but allow us to scroll vertically & horizontally, and interact using a mouse.
@@ -54,7 +55,7 @@ Observation: Directory and file created successfully. Later permission look corr
 
 ![alt text](image-6.png)
 
-
+---
 
 ### 💾 Disk / IO check
 1. ```df -h```: Disk utilziation is healthy (~69% free disk on root), no storage issue.
@@ -75,7 +76,7 @@ Observation: Directory and file created successfully. Later permission look corr
 
 ![alt text](image-11.png)
 
-
+---
 
 ### 🌐 Network
 1. ```sudo ss -tulpn | grep nginx```: nginx is listening on port 80 (HTTP)
@@ -94,7 +95,7 @@ Observation: Directory and file created successfully. Later permission look corr
 
  ![alt text](image-14.png)
 
-
+---
 
 ### 📜 Logs 
 1. ```journalctl -u nginx -n 50```: Multiple times nginx was restarted but without any failure/errors
@@ -106,7 +107,7 @@ Observation: Directory and file created successfully. Later permission look corr
 
 ![alt text](image-16.png)
 
-
+---
 
 ### 🤓 Quick finding
 + System is stable
