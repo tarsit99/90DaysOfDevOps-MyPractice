@@ -86,7 +86,7 @@ Observation: Directory and file created successfully. Later permission look corr
 
 ![alt text](image-13.png)
 
-==ss and netstat command is used for the same purpose. ss is fast, modern and recommended while netstat is slower and legacy==
+⚠️**NOTE:** ss and netstat command is used for the same purpose. ss is fast, modern and recommended while netstat is slower and legacy==
 
 
 3. ```curl -I http://localhost```: Service is responding correctly.
