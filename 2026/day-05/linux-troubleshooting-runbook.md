@@ -7,7 +7,7 @@ Runbook is a short, repeatable checklist which we followed during an incident.
 **nginx**
 
 
-### Environment basics / System info
+### 🔍 Environment basics / System info
 1. ```uname -a```: print all system information || Ubuntu with kernel 6.17.0-1007-aws (optimized for aws environment). No issue observed.
 
 ![alt text](image.png)
@@ -24,7 +24,7 @@ Runbook is a short, repeatable checklist which we followed during an incident.
 
 
 
-###  Filesystem sanity
+### 📁 Filesystem sanity
 1. ```mkdir /tmp/runbook-demo```
     ```cp /etc/hosts /tmp/runbook-demo/hosts-copy && ls -l /tmp/runbook-demo```  
 Observation: Directory and file created successfully. Later permission look correct.
@@ -33,7 +33,7 @@ Observation: Directory and file created successfully. Later permission look corr
 
 
 
-### CPU / Memory check
+### ⚙️ CPU / Memory check
 1. ```htop```: It gives dynamic real-time running process. Similar to top, but allow us to scroll vertically & horizontally, and interact using a mouse.
 
 ![alt text](image-4.png)
@@ -55,7 +55,7 @@ Observation: Directory and file created successfully. Later permission look corr
 
 
 
-### Disk / IO check
+### 💾 Disk / IO check
 1. ```df -h```: Disk utilziation is healthy (~69% free disk on root), no storage issue.
 
 ![alt text](image-7.png)
@@ -76,7 +76,7 @@ Observation: Directory and file created successfully. Later permission look corr
 
 
 
-### Network
+### 🌐 Network
 1. ```sudo ss -tulpn | grep nginx```: nginx is listening on port 80 (HTTP)
 
 ![alt text](image-12.png)
@@ -95,7 +95,7 @@ Observation: Directory and file created successfully. Later permission look corr
 
 
 
-### Logs 
+### 📜 Logs 
 1. ```journalctl -u nginx -n 50```: Multiple times nginx was restarted but without any failure/errors
 
 ![alt text](image-15.png)
@@ -107,7 +107,7 @@ Observation: Directory and file created successfully. Later permission look corr
 
 
 
-### Quick finding
+### 🤓 Quick finding
 + System is stable
 + CPU and memory utlization is normal
 + Disk space is sufficient
