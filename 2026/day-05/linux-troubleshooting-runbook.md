@@ -1,10 +1,10 @@
 # 📘 Linux Troubleshooting Runbook 
 
-Runbook is a short, repeatable checklist which we followed during an incident.
+Runbook is a short, repeatable checklist which we follow during an incident.
 
 ---
 
-## 🛠️ Target Service
+## 🛠️ Target service / process
 **nginx**
 
 ---
@@ -20,7 +20,7 @@ Runbook is a short, repeatable checklist which we followed during an incident.
 ![alt text](image-1.png)
 
 
-3. ```cat /etc/os-release```: actual source file with detailed OS info used in scripts/automation ⚙️. OS is Ubuntu 24.04 LTS. Stable version.
+3. ```cat /etc/os-release```: actual source file with detailed OS info used in scripts/automation ⚙️. OS is Ubuntu 24.04 LTS.
 
 ![alt text](image-2.png)
 
@@ -29,14 +29,14 @@ Runbook is a short, repeatable checklist which we followed during an incident.
 ### 📁 Filesystem sanity
 1. ```mkdir /tmp/runbook-demo```
     ```cp /etc/hosts /tmp/runbook-demo/hosts-copy && ls -l /tmp/runbook-demo```  
-Observation: Directory and file created successfully. Later permission look correct.
+Observation: Directory and file created successfully. Later we check for file permission which looks correct.
 
 ![alt text](image-3.png)
 
 ---
 
 ### ⚙️ CPU / Memory check
-1. ```htop```: It gives dynamic real-time running process. Similar to top, but allow us to scroll vertically & horizontally, and interact using a mouse.
+1. ```htop```: It gives dynamic real-time view of running processes. Similar to top, but allow us to scroll vertically & horizontally, and interact using a mouse.
 
 ![alt text](image-4.png)
 
@@ -68,7 +68,7 @@ Observation: Directory and file created successfully. Later permission look corr
 ![alt text](image-8.png)
 
 
-3. ```iostat/vmstat/dstat```: System is idle (~99% CPU idle) with very low I/O, so there is no performance issue.
+3. ```iostat/vmstat/dstat```: ~99% CPU idle, so no load. No heavy disk activity. No network traffic. No swapping hence good and sufficient RAM available. No performance issue. Overally system is idle, stable and healthy.
 
 ![alt text](image-9.png)
 
@@ -88,7 +88,7 @@ Observation: Directory and file created successfully. Later permission look corr
 
 ![alt text](image-13.png)
 
-⚠️**NOTE:** ss and netstat command is used for the same purpose. ss is fast, modern and recommended while netstat is slower and legacy==
+⚠️**NOTE:** ss and netstat command is used for the same purpose. ss is fast, modern and recommended while netstat is slower and legacy.
 
 
 3. ```curl -I http://localhost```: Service is responding correctly.
