@@ -6,7 +6,7 @@ DevOps is a culture that is adopted by every organization to increase efficiency
 - Cloud engineering is a field where we use servers & services over the internet without managaing hardware, which makes system faster and scalable.
 
 # Reason for starting learning Devops & Cloud
-- I am learning DevOps and Cloud for better career growth and a competitive salary package. I want to transition from support role to core or engineering focused role.
+I am learning DevOps and Cloud for better career growth and a competitive salary package. I want to transition from support role to core or engineering focused role.
 
 # Where I want to reach
 Independently I aim to:
@@ -21,7 +21,7 @@ Independently I aim to:
 - Baby steps every day. Even on busy days, I will target at least 30 minutes learning or revising to keep the momentum.
 
 # Current level
-- I am a working professional with 4-5 years experience in SRE role, with hands-on exposure to tools like GitLab, Nexus, SonarQube, and UBS Deploy (in-house tool).
+I am a working professional with 4-5 years experience in SRE role, with hands-on exposure to tools like GitLab, Nexus, SonarQube, and UBS Deploy (in-house tool).
 
 # 3 clear goals for 90 days
 - Build strong fundamentals in Linux, networking, and troubleshooting.
