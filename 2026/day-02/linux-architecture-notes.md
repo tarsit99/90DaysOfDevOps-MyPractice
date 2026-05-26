@@ -43,3 +43,8 @@ systemd is the first process that runs when computer turn-on. It is both service
 4. journalctl -u <service> → View service logs
 5. kill <PID> → Terminate a process ==> SIGKILL
 6. df -h → Disk space usage in human-readable format.
+
+## Production Best Practices 💡
+- Graceful Shutdown: Always use ```kill -15``` before ```kill -9``` to allow applications to save data and close connections.
+- Resource Monitoring: Use ```htop``` to identify "Zombie" or "Defunct" processes that might indicate a bug in the application's parent-child logic.
+- Log Analysis: Use ```journalctl -u <service_name>```
