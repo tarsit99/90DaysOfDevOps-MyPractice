@@ -58,7 +58,7 @@
 ---
 
 ## 🛠️ Mini troubleshooting steps
-1. Check service statsus 
+1. Check service status 
 ```systemctl status <service>```
 
 2. Check logs
