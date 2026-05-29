@@ -39,6 +39,7 @@
 
 > “Linux services are managed by systemd using systemctl commands.”
 
+---
 
 ## 📄 Log checks
 1. ```journalctl -u nginx``` → View nginx logs.
