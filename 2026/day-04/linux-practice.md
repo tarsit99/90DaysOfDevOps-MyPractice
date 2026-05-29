@@ -45,7 +45,7 @@
 
 ![alt text](image-7.png)
 
-* ```journalctl -xe → Recent errors.
+* ```journalctl -xe``` → Recent errors.
 
 ![alt text](image-8.png)
 
