@@ -2,7 +2,7 @@
 
 ## Core Components of Linux
 1. Kernel
-    * Heart or core of the OS that directly interacts with hardware. It acts as a bridge between hardware and applications.
+    * Heart or core of the Linux OS that directly interacts with hardware. It acts as a bridge between hardware and applications.
     * It handles hardware (CPU, memory, processes, and file systems).
 
 2. User space
