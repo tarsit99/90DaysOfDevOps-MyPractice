@@ -16,7 +16,7 @@
 ## How Processes Are Created and Managed
 - A process = running program.
 - Process is created when we run a command.
-Flow: Shell → Kernel → fork() creates process → exec() loads program
+> Flow: Shell → Kernel → fork() creates process → exec() loads program
 
 In Linux every task is a process and each process is assigned with: PID (unique ID), Parent process, CPU & memory usage.
 
