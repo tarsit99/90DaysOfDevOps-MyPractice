@@ -20,10 +20,10 @@ Independently I aim to:
 
 ## Consistency
 - I will focus on consistency over perfection. I will first target a 7-day streak, then 15 days, and gradually build this into a long-term habit.
-- Baby steps every day. Even on busy days, I will target at least 30 minutes learning or revising to keep the momentum.
+- Baby steps at a time. Even on busy days, I will target at least 30 minutes learning or revising to keep the momentum.
 
 ## Current level
-I am a working professional with 4-5 years experience in SRE role, with hands-on exposure to tools like GitLab, Nexus, SonarQube, and UBS Deploy (in-house tool).
+I am a working professional with 4-5 years experience in SRE role, with hands-on exposure to tools like GitLab, Nexus, SonarQube, and UBSD (in-house tool).
 
 ## 3 clear goals for 90 days
 - Build strong fundamentals in Linux, networking, and troubleshooting.
