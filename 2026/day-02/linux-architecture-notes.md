@@ -28,8 +28,7 @@ In Linux every task is a process and each process is assigned with: PID (unique 
 5. Idle (I) → No active work
 
 ## What systemd Does and Why It Matters
-systemd is the first process that runs when computer turn-on. It is both service manager and init system. It matters because:
-- It manages services using start/stop/restart
+systemd is the first process that runs when computer turn-on. It is both service manager and init system. It is responsible for bringing entire system into life. It matters because:
 - It handles background processes (daemons)
 - It automatically restart failed services
 - It manages system calls via systemctl
