@@ -16,7 +16,7 @@ Independently I aim to:
  - Deploy a production-grade application on Kubernetes.
  - Troubleshoot production issues.
  - Cloud infrastructure automation.
-- Long-term goal is to secure a DevOps role in a product-based company.
+> Long-term goal is to secure a DevOps role in a product-based company.
 
 ## Consistency
 - I will focus on consistency over perfection. I will first target a 7-day streak, then 15 days, and gradually build this into a long-term habit.
