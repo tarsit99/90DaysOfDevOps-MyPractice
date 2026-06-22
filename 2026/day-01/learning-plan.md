@@ -1,6 +1,6 @@
 # 90-days Personal DevOps Learning Plan
 
-## My understanding of DevOps & Cloud Engineerin
+## My understanding of DevOps & Cloud Engineering
 - DevOps is a culture or mindset where development team collaborate with operation team to reduce time to market by adopting automation, cloud, infrastructure & scaling.
 (OR) 
 DevOps is a culture that is adopted by every organization to increase efficiency & accelerate SDLC.
