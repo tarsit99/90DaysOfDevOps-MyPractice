@@ -3,7 +3,7 @@
 ## ⚙️ Process management
 - ```top``` → Display dynamic real-time CPU/memory usage & active processes.
 - ```htop``` → Interactive process viewer, similar to top but allows you to scroll vertically and horizontally.
-- ```ps aux``` → Provide a detailed snapshot of all running processes. This command used for system troubleshooting and monitoring.
+- ```ps aux``` → Provide a detailed snapshot of all running processes. It is a common technique used for system troubleshooting and monitoring.
 - ```kill -9 <PID>``` → Forcefully terminate a process.
 - ```free -m``` → Display memory usage.
 - ```nproc``` → Show number of CPU cores.
@@ -17,16 +17,18 @@
 - ```rm -rf <dir/file>``` → Forcefully & recursively removes files/folder.
 - ```cp <src> <dest>``` → Copy files/directories.
 - ```mv <src> <dest>``` → Move/rename files/directories.
-- ```cat <file>``` → Concatenate or read a file content and prints on the stdout.
+- ```cat <file>``` → Concatenate files and prints on the standard output (stdout).
 - ```find``` → Seacrh for a file in a directory hierarchy.
 - ```wc <file>``` → Count the no. lines, words and bytes.
 - ```df -h``` → Show disk space usage across all mounted file system.
 
 ## 🌐 Networking troubleshooting
-- ```ping <host>``` → Check connectivity.
+- ```ping <host>``` → Check connectivity whether a host is reacheable or not.
 - ```ip addr``` → Show IP address & other network interface details.
 - ```dig <domain>``` or ```nslookup <domain>``` → DNS lookup to check domain-to-IP mapping.
+> - dig -> domain information grofer
 - ```curl -I <url>``` → Fetch the HTTP header for a website (great for debugging 404/500 error).
+> - curl -> client uniform resource locater
 - ```netstat -tulnp``` → Lists all listening ports and applications using them
 
 ## 📊 System and Logs
