@@ -1,41 +1,41 @@
 # Day 4 – Linux Practice: Processes and Services
 
-> Services like ssh, nginx, docker, cron, ping
+> Services like nginx, docker, ssh, ping, cron
 
 ## ⚙️ Process checks
 1. ```ps -ef``` → Provides snapshot of all running processes.
 
-![alt text](image.png)
+![ps -ef command snap](image.png)
 
 * ```ps -ef | grep ssh``` → Shows SSH-related running processes.
 
-![alt text](image-1.png)
+![ps -ef | grep ssh command snap](image-1.png)
 
 
 2. ```top``` → Provides dynamic real-time view of all the running processes.
 
-![alt text](image-2.png)
+![top command snap](image-2.png)
 
 * ```htop``` → Same as top with additional features like  interactive process viewer; we can scroll horizontally & vertically.
 
-![alt text](image-3.png)
+![htop command snap](image-3.png)
 
 
 3. ```pgrep <service>``` → Find PID of a process.
 
-![alt text](image-4.png)
+![pgrep command snap](image-4.png)
 
 ---
 
 ## 🔧 Service checks
-1. ```systemctl status ssh``` → Check service status/health; service is active and running.
+1. ```systemctl status ssh``` → Check service status or health; service is active and running.
 
-![alt text](image-5.png)
+![systemctl status command snap](image-5.png)
 
 
 2. ```systemctl list-units --type=service``` → Display all active/running services
 
-![alt text](image-6.png)
+![systemctl list units command snap](image-6.png)
 
 > “Linux services are managed by systemd using systemctl commands.”
 
@@ -44,16 +44,16 @@
 ## 📄 Log checks
 1. ```journalctl -u nginx``` → View nginx logs.
 
-![alt text](image-7.png)
+![journalctl log check command snap](image-7.png)
 
 * ```journalctl -xe``` → Recent errors.
 
-![alt text](image-8.png)
+![recent error using journalctl command snap](image-8.png)
 
 
 2. ```tail -n 20 /var/log/syslog``` → Shows last 20 lines of system log file.
 
-![alt text](image-9.png)
+![tail command snap](image-9.png)
 
 ---
 
