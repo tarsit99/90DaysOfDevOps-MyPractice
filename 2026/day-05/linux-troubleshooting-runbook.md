@@ -10,17 +10,17 @@ Runbook is a short, repeatable checklist which we follow during an incident.
 ---
 
 ### 🔍 Environment basics / System info
-1. ```uname -a```: print all system information || Ubuntu with kernel 6.17.0-1007-aws (optimized for aws environment). No issue observed.
+1. ```uname -a```: Print all system information || Ubuntu with kernel 6.17.0-1007-aws (optimized for aws environment). No issue observed.
 
 ![alt text](image.png)
 
 
-2. ```lsb_release -a```: Linux standard base, gives formatted OS info. OS is Ubuntu 24.04 LTS. Stable version.
+2. ```lsb_release -a```: Linux standard base, gives formatted OS information. OS is Ubuntu 24.04 LTS, stable version.
 
 ![alt text](image-1.png)
 
 
-3. ```cat /etc/os-release```: actual source file with detailed OS info used in scripts/automation ⚙️. OS is Ubuntu 24.04 LTS.
+3. ```cat /etc/os-release```: Actual source file with detailed OS information used in scripts/automation ⚙️. OS is Ubuntu 24.04 LTS.
 
 ![alt text](image-2.png)
 
@@ -29,7 +29,7 @@ Runbook is a short, repeatable checklist which we follow during an incident.
 ### 📁 Filesystem sanity
 1. ```mkdir /tmp/runbook-demo```
     ```cp /etc/hosts /tmp/runbook-demo/hosts-copy && ls -l /tmp/runbook-demo```  
-Observation: Directory and file created successfully. Later we check for file permission which looks correct.
+Observation: Directory and file created successfully. Later, we check for file permission which looks correct.
 
 ![alt text](image-3.png)
 
@@ -41,12 +41,12 @@ Observation: Directory and file created successfully. Later we check for file pe
 ![alt text](image-4.png)
 
 
-2. ```ps -o pid,pcpu,pmem,comm -p $(pgrep nginx)```: Finds all nginx processes and show their CPU and memory usage. nginx is using low CPU and Memory.
+2. ```ps -o pid,pcpu,pmem,comm -p $(pgrep nginx)```: Finds all nginx processes and show their CPU and Memory usage. Nginx is using low CPU and Memory.
     * First finds all nginx PIDs and passes result to the ```ps -o pid,pcpu,pmem,comm -p```
     * pid => Process ID
     * pcpu => CPU utilization %
     * pmem => Memory utilization %
-    * comm => command name (here it is nginx)
+    * comm => command name (e.g., Nginx)
 
 ![alt text](image-5.png)
 
@@ -79,12 +79,12 @@ Observation: Directory and file created successfully. Later we check for file pe
 ---
 
 ### 🌐 Network
-1. ```sudo ss -tulpn | grep nginx```: nginx is listening on port 80 (HTTP)
+1. ```sudo ss -tulpn | grep nginx```: Nginx is listening on port 80 (HTTP)
 
 ![alt text](image-12.png)
 
 
-2. ```sudo netstat -tulnp | grep nginx```: nginx is listening on port 80 (HTTP)
+2. ```sudo netstat -tulnp | grep nginx```: Nginx is listening on port 80 (HTTP)
 
 ![alt text](image-13.png)
 
@@ -98,7 +98,7 @@ Observation: Directory and file created successfully. Later we check for file pe
 ---
 
 ### 📜 Logs 
-1. ```journalctl -u nginx -n 50```: Multiple times nginx was restarted but without any failure/errors
+1. ```journalctl -u nginx -n 50```: Multiple times nginx was restarted but without any failure/errors.
 
 ![alt text](image-15.png)
 
@@ -110,12 +110,12 @@ Observation: Directory and file created successfully. Later we check for file pe
 ---
 
 ### 🤓 Quick finding
-+ System is stable
-+ CPU and memory utlization is normal
-+ Disk space is sufficient
-+ Network is fine
-+ nginx is running
-+ No such errors found
++ System is stable.
++ CPU and Memory usage is normal.
++ Disk space is sufficient.
++ Network is fine.
++ Nginx is running.
++ No such errors found.
 
 
 
@@ -132,6 +132,6 @@ Observation: Directory and file created successfully. Later we check for file pe
 
 3. strace (Deep debugging)
 ```pgrep nginx```
-```strace -p <pid>```
+```sudo strace -p <pid>```
 
 ![alt text](image-18.png)
