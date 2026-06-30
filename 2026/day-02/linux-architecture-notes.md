@@ -1,4 +1,4 @@
-# Day 2 – Linux Architecture, Processes, and systemd
+# Day 02 – Linux Architecture, Processes, and systemd
 
 ## Core Components of Linux
 1. Kernel
