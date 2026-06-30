@@ -1,4 +1,4 @@
-# Day 4 – Linux Practice: Processes and Services
+# Day 04 – Linux Practice: Processes and Services
 
 > Services like nginx, docker, ssh, ping, cron
 
