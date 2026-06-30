@@ -1,4 +1,4 @@
-# Day 3 – Linux Commands Cheatsheet
+# Day 03 – Linux Commands Cheatsheet
 
 ## ⚙️ Process management
 - ```top``` → Display dynamic real-time CPU/memory usage & active processes.
