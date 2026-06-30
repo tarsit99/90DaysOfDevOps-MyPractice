@@ -76,10 +76,8 @@ It writes to the file and displays output on the terminal at the same time.
 Starting Day 6 of my DevOps Challenge.
 Redirection using > and >> operator. Learning file read and write operations.
 Using tee command to write and display output.
-
-![File IO console screen](fileIO.png)
-
 ```
+![File IO console screen](fileIO.png)
 
 ---
 
